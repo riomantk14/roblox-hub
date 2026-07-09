@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roblox Mega Pack</title>
+  <meta name="description" content="Get your free Roblox Mega Pack with avatar PNGs, MOD Menu visuals, and a secret giveaway entry." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(255, 54, 54, 0.18), transparent 30%),
+        linear-gradient(180deg, #121212 0%, #0a0a0a 100%);
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    .container { width: min(1120px, 92%); margin: 0 auto; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(12px);
+      background: rgba(10, 10, 10, 0.72);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+    }
+
+    .logo-badge {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #ff2d2d, #b50000);
+      display: grid;
+      place-items: center;
+      box-shadow: 0 10px 25px rgba(255, 45, 45, 0.28);
+      flex-shrink: 0;
+    }
+
+    .logo-badge::before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      background: #fff;
+      transform: rotate(18deg);
+      display: block;
+      border-radius: 2px;
+    }
+
+    .top-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border-radius: 14px;
+      font-weight: 700;
+      transition: 0.25s ease;
+      border: 1px solid transparent;
+      cursor: pointer;
+      min-height: 46px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #ff3131, #b30000);
+      color: #fff;
+      box-shadow: 0 12px 28px rgba(255, 49, 49, 0.25);
+    }
+
+    .btn-primary:hover { transform: translateY(-2px); }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.06);
+      border-color: rgba(255,255,255,0.1);
+      color: #fff;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.1);
+      transform: translateY(-2px);
+    }
+
+    .hero {
+      padding: 70px 0 30px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .hero-copy h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(2.2rem, 5vw, 4.6rem);
+      line-height: 1.05;
+      margin-bottom: 18px;
+      letter-spacing: 0.6px;
+    }
+
+    .hero-copy h1 span {
+      color: #ff4b4b;
+      text-shadow: 0 0 22px rgba(255, 75, 75, 0.35);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 8px 12px;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.05);
+      color: #ffd2d2;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .hero-copy p {
+      color: rgba(255,255,255,0.82);
+      font-size: 1.05rem;
+      max-width: 700px;
+      margin-bottom: 24px;
+    }
+
+    .hero-points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 26px;
+    }
+
+    .hero-points span {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 28px;
+      padding: 18px;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+    }
+
+    .hero-main-image {
+      border-radius: 22px;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border: 2px solid rgba(255,255,255,0.08);
+    }
+
+    .floating-mini {
+      position: absolute;
+      right: -10px;
+      bottom: -10px;
+      width: 170px;
+      background: rgba(14,14,14,0.9);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 18px;
+      padding: 12px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+    }
+
+    .floating-mini img {
+      border-radius: 12px;
+      width: 100%;
+      height: 110px;
+      object-fit: cover;
+      margin-bottom: 8px;
+    }
+
+    .floating-mini strong {
+      display: block;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+
+    .floating-mini p {
+      font-size: 12px;
+      color: rgba(255,255,255,0.74);
+    }
+
+    .section {
+      padding: 42px 0;
+    }
+
+    .section-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(1.6rem, 2.5vw, 2.5rem);
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: rgba(255,255,255,0.74);
+      max-width: 760px;
+      margin: 0 auto 28px;
+    }
+
+    .cards-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .feature-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 22px;
+      overflow: hidden;
+      transition: 0.25s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(255,255,255,0.16);
+    }
+
+    .feature-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .feature-body {
+      padding: 18px;
+    }
+
+    .feature-tag {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+      background: rgba(255,255,255,0.08);
+      color: #ffd7d7;
+    }
+
+    .feature-card h3 {
+      font-size: 1.22rem;
+      margin-bottom: 10px;
+    }
+
+    .feature-card p {
+      color: rgba(255,255,255,0.72);
+      font-size: 0.96rem;
+      margin-bottom: 16px;
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 8px;
+      color: rgba(255,255,255,0.88);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .feature-list div::before {
+      content: "• ";
+      color: #ff5959;
+      font-weight: 900;
+    }
+
+    .locker-box {
+      margin-top: 10px;
+      background: linear-gradient(180deg, rgba(255,49,49,0.12), rgba(255,255,255,0.03));
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 28px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    }
+
+    .locker-box h3 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(1.4rem, 2vw, 2rem);
+      margin-bottom: 12px;
+    }
+
+    .locker-box p {
+      color: rgba(255,255,255,0.78);
+      max-width: 720px;
+      margin: 0 auto 20px;
+    }
+
+    .locker-note {
+      margin-top: 14px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.6);
+    }
+
+    .giveaway-box {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 24px;
+      align-items: center;
+      background: linear-gradient(180deg, rgba(255,215,0,0.08), rgba(255,255,255,0.03));
+      border: 1px solid rgba(255,215,0,0.18);
+      border-radius: 28px;
+      padding: 24px;
+    }
+
+    .giveaway-box img {
+      width: 100%;
+      border-radius: 22px;
+      object-fit: cover;
+      min-height: 300px;
+      max-height: 420px;
+    }
+
+    .giveaway-content h3 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(1.5rem, 2.3vw, 2.4rem);
+      margin-bottom: 12px;
+      color: #ffd54f;
+    }
+
+    .giveaway-content p {
+      color: rgba(255,255,255,0.82);
+      margin-bottom: 14px;
+    }
+
+    .prizes {
+      display: grid;
+      gap: 12px;
+      margin: 20px 0;
+    }
+
+    .prize {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,215,0,0.16);
+      border-radius: 16px;
+      padding: 14px 16px;
+      font-weight: 700;
+    }
+
+    .prize span { color: #ffd54f; }
+
+    .code-box {
+      margin: 18px 0;
+      padding: 16px 18px;
+      border-radius: 18px;
+      border: 1px dashed rgba(255,255,255,0.25);
+      background: rgba(0,0,0,0.35);
+    }
+
+    .code-box strong {
+      display: block;
+      font-size: 1.6rem;
+      letter-spacing: 5px;
+      color: #ff6666;
+      font-family: 'Orbitron', sans-serif;
+      margin-top: 4px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.04);
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .step {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 22px;
+      padding: 22px 18px;
+      text-align: center;
+    }
+
+    .step-num {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 12px;
+      background: linear-gradient(135deg, #ff3232, #820000);
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 800;
+      box-shadow: 0 10px 24px rgba(255,50,50,0.24);
+    }
+
+    .step h4 {
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    .step p {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.72);
+    }
+
+    .final-cta {
+      text-align: center;
+      padding-bottom: 80px;
+    }
+
+    .final-cta-card {
+      background: linear-gradient(180deg, rgba(255,49,49,0.12), rgba(255,255,255,0.03));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 30px;
+      padding: 34px 22px;
+    }
+
+    .final-cta-card h3 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(1.5rem, 2.4vw, 2.4rem);
+      margin-bottom: 12px;
+    }
+
+    .final-cta-card p {
+      color: rgba(255,255,255,0.76);
+      max-width: 700px;
+      margin: 0 auto 22px;
+    }
+
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 22px 0 40px;
+      text-align: center;
+      color: rgba(255,255,255,0.5);
+      font-size: 14px;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .giveaway-box,
+      .cards-3,
+      .steps,
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .floating-mini {
+        position: static;
+        width: 100%;
+        margin-top: 14px;
+      }
+
+      .feature-card img,
+      .gallery img {
+        height: auto;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .topbar-inner {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .top-actions {
+        width: 100%;
+      }
+
+      .top-actions .btn,
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .hero {
+        padding-top: 40px;
+      }
+
+      .locker-box,
+      .giveaway-box,
+      .final-cta-card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="logo">
+        <div class="logo-badge"></div>
+        <div>Roblox Mega Pack</div>
+      </div>
+      <div class="top-actions">
+        <a class="btn btn-secondary" href="#preview">See Preview</a>
+        <a class="btn btn-primary" href="#unlock">Unlock Free Access</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Free Roblox Bundle</div>
+          <h1>Get Your <span>Free Roblox Mega Pack</span></h1>
+          <p>
+            Unlock avatar PNGs, bonus mod visuals, <strong>MOD Menu / Unlimited Robux / Wallhack</strong> themed content,
+            and a secret giveaway entry in one place.
+          </p>
+
+          <div class="hero-points">
+            <span>Avatar PNG Pack</span>
+            <span>MOD Menu / Unlimited Robux / Wallhack</span>
+            <span>Secret Giveaway Code</span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#unlock">Unlock Free Access</a>
+            <a class="btn btn-secondary" href="https://instagram.com/dabanjion" target="_blank" rel="noopener noreferrer">Open Instagram</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card">
+            <img
+              class="hero-main-image"
+              src="https://i.ibb.co/ZR2fyDvm/Roblox-20.png"
+              alt="Roblox Mega Pack iconic image"
+            />
+          </div>
+
+          <div class="floating-mini">
+            <img
+              src="https://i.ibb.co/Fq5Xs94F/imgi-4-Roblox-MOD-APK4.png"
+              alt="Roblox mod visual preview"
+            />
+            <strong>Bonus MOD Access</strong>
+            <p>Extra visuals and themed content inside the bundle.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Choose Your Path</h2>
+        <p class="section-subtitle">
+          This page combines the three core parts of your offer into one simple Roblox-style landing page.
+        </p>
+
+        <div class="cards-3">
+          <article class="feature-card">
+            <img src="https://i.ibb.co/PGnVPqRD/Roblox-183.png" alt="Roblox avatar PNG pack preview" />
+            <div class="feature-body">
+              <span class="feature-tag">Pack</span>
+              <h3>Avatar PNG Pack</h3>
+              <p>Free Roblox-style character images, stickers, and visual assets ready to use.</p>
+              <div class="feature-list">
+                <div>Multiple PNG visuals</div>
+                <div>Character and sticker style assets</div>
+                <div>Easy to preview and download</div>
+              </div>
+              <a class="btn btn-primary" href="#unlock">Get Free Pack</a>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <img src="https://i.ibb.co/ymshn3Sq/imgi-7-roblox-mod-apk-3.png" alt="Roblox MOD Menu visual" />
+            <div class="feature-body">
+              <span class="feature-tag">Mod</span>
+              <h3>MOD Menu / Unlimited Robux / Wallhack</h3>
+              <p>Focused on the mod-style benefits you wanted to highlight clearly in the title.</p>
+              <div class="feature-list">
+                <div>MOD Menu themed content</div>
+                <div>Unlimited Robux style visuals</div>
+                <div>Wallhack-related bonus section</div>
+              </div>
+              <a class="btn btn-primary" href="#unlock">Unlock Mod Access</a>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <img src="https://i.ibb.co/KR4tJvq/GIVEAWAY-LOCKER.png" alt="Roblox giveaway banner" />
+            <div class="feature-body">
+              <span class="feature-tag">Giveaway</span>
+              <h3>Secret Giveaway Entry</h3>
+              <p>Complete the unlock step, get your secret code, and send it directly on Instagram.</p>
+              <div class="feature-list">
+                <div>Win Roblox gift card rewards</div>
+                <div>Simple code-based entry flow</div>
+                <div>Direct Instagram contact</div>
+              </div>
+              <a class="btn btn-primary" href="#giveaway">Enter Giveaway</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="unlock">
+      <div class="container">
+        <div class="locker-box">
+          <h3>Your Pack Is Ready</h3>
+          <p>
+            Complete <strong>one quick step</strong> to unlock your free Roblox Mega Pack, access the mod-themed section,
+            and receive your secret giveaway code.
+          </p>
+          <a class="btn btn-primary" href="YOUR_CONTENT_LOCKER_LINK_HERE" target="_blank" rel="noopener noreferrer">Unlock Free Access</a>
+          <div class="locker-note">Replace the button link with your AdBlueMedia locker link.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="giveaway">
+      <div class="container">
+        <div class="giveaway-box">
+          <img
+            src="https://i.ibb.co/yBhgsB1W/imgi-1-a898b94c5150443d5cd4a64d4f68cc23-png-720x720q80-png.png"
+            alt="Roblox giveaway gift card image"
+          />
+
+          <div class="giveaway-content">
+            <h3>Secret Giveaway Code</h3>
+            <p>
+              After completing the unlock step, you will receive a code. Send it directly to
+              <strong>@dabanjion</strong> on Instagram to enter the giveaway.
+            </p>
+
+            <div class="prizes">
+              <div class="prize">🥇 <span>$20</span> Roblox Gift Card</div>
+              <div class="prize">🥈 <span>$10</span> Roblox Gift Card</div>
+              <div class="prize">🥉 <span>$5</span> Roblox Gift Card</div>
+            </div>
+
+            <div class="code-box">
+              Example Secret Code
+              <strong>RBLX2026</strong>
+            </div>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="https://instagram.com/dabanjion" target="_blank" rel="noopener noreferrer">Send Code on Instagram</a>
+              <a class="btn btn-secondary" href="#unlock">Unlock First</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="preview">
+      <div class="container">
+        <h2 class="section-title">Preview The Pack</h2>
+        <p class="section-subtitle">
+          These are some of the Roblox-style visuals included in your offer preview.
+        </p>
+
+        <div class="gallery">
+          <img src="https://i.ibb.co/PGnVPqRD/Roblox-183.png" alt="Roblox pack image 1" />
+          <img src="https://i.ibb.co/4wN7Q2X2/Roblox-61.png" alt="Roblox pack image 2" />
+          <img src="https://i.ibb.co/CKyj6Cqg/Roblox-46.png" alt="Roblox pack image 3" />
+          <img src="https://i.ibb.co/m5wrHJ0g/Roblox-53.png" alt="Roblox pack image 4" />
+          <img src="https://i.ibb.co/dw5M3zHC/Roblox-12.png" alt="Roblox pack image 5" />
+          <img src="https://i.ibb.co/Fq5Xs94F/imgi-4-Roblox-MOD-APK4.png" alt="Roblox mod image preview" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">
+          Keep it simple: unlock, get access, receive the code, then message it on Instagram.
+        </p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <h4>Open Unlock</h4>
+            <p>Click the unlock button to start the access step.</p>
+          </div>
+
+          <div class="step">
+            <div class="step-num">2</div>
+            <h4>Complete One Step</h4>
+            <p>Finish the content locker requirement one time.</p>
+          </div>
+
+          <div class="step">
+            <div class="step-num">3</div>
+            <h4>Get Access + Code</h4>
+            <p>Receive your pack access and your secret giveaway code.</p>
+          </div>
+
+          <div class="step">
+            <div class="step-num">4</div>
+            <h4>Send It on Instagram</h4>
+            <p>Message the code to @dabanjion to enter the draw.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta">
+      <div class="container">
+        <div class="final-cta-card">
+          <h3>Unlock Everything In One Place</h3>
+          <p>
+            Get the Avatar PNG Pack, the MOD Menu / Unlimited Robux / Wallhack themed section,
+            and your Secret Giveaway Entry from one landing page.
+          </p>
+          <div class="hero-actions" style="justify-content:center;">
+            <a class="btn btn-primary" href="#unlock">Unlock Free Access</a>
+            <a class="btn btn-secondary" href="https://instagram.com/dabanjion" target="_blank" rel="noopener noreferrer">Instagram Direct</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Roblox Mega Pack • Digital Access Page
+    </div>
+  </footer>
+</body>
+</html>
