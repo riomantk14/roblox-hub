@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Roblox Mega Pack</title>
-  <meta name="description" content="Get your free Roblox Mega Pack with avatar PNGs, MOD Menu visuals, and a secret giveaway entry." />
+  <meta name="description" content="Unlock your free Roblox Mega Pack, MOD Menu access, and Secret Giveaway entry." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -19,9 +19,9 @@
       color: #ffffff;
       line-height: 1.6;
     }
-
     a { text-decoration: none; color: inherit; }
     img { max-width: 100%; display: block; }
+    button { font: inherit; border: 0; cursor: pointer; }
     .container { width: min(1120px, 92%); margin: 0 auto; }
 
     .topbar {
@@ -32,7 +32,6 @@
       background: rgba(10, 10, 10, 0.72);
       border-bottom: 1px solid rgba(255,255,255,0.08);
     }
-
     .topbar-inner {
       display: flex;
       align-items: center;
@@ -40,7 +39,6 @@
       gap: 16px;
       padding: 14px 0;
     }
-
     .logo {
       display: flex;
       align-items: center;
@@ -49,7 +47,6 @@
       font-weight: 800;
       letter-spacing: 0.6px;
     }
-
     .logo-badge {
       width: 42px;
       height: 42px;
@@ -60,7 +57,6 @@
       box-shadow: 0 10px 25px rgba(255, 45, 45, 0.28);
       flex-shrink: 0;
     }
-
     .logo-badge::before {
       content: "";
       width: 16px;
@@ -70,7 +66,6 @@
       display: block;
       border-radius: 2px;
     }
-
     .top-actions {
       display: flex;
       gap: 10px;
@@ -90,37 +85,44 @@
       cursor: pointer;
       min-height: 46px;
     }
-
     .btn-primary {
       background: linear-gradient(135deg, #ff3131, #b30000);
       color: #fff;
       box-shadow: 0 12px 28px rgba(255, 49, 49, 0.25);
     }
-
     .btn-primary:hover { transform: translateY(-2px); }
-
     .btn-secondary {
       background: rgba(255,255,255,0.06);
       border-color: rgba(255,255,255,0.1);
       color: #fff;
     }
-
     .btn-secondary:hover {
       background: rgba(255,255,255,0.1);
       transform: translateY(-2px);
     }
-
-    .hero {
-      padding: 70px 0 30px;
+    .btn-pack {
+      background: linear-gradient(135deg, #00c8ff, #0078ff);
+      color: #fff;
+      box-shadow: 0 12px 26px rgba(0, 168, 255, 0.24);
+    }
+    .btn-mod {
+      background: linear-gradient(135deg, #00cc66, #00ff88);
+      color: #041a10;
+      box-shadow: 0 12px 26px rgba(0, 255, 136, 0.24);
+    }
+    .btn-giveaway {
+      background: linear-gradient(135deg, #ff9900, #ffd700);
+      color: #1a1200;
+      box-shadow: 0 12px 26px rgba(255, 215, 0, 0.24);
     }
 
+    .hero { padding: 70px 0 30px; }
     .hero-grid {
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
       gap: 36px;
       align-items: center;
     }
-
     .hero-copy h1 {
       font-family: 'Orbitron', sans-serif;
       font-size: clamp(2.2rem, 5vw, 4.6rem);
@@ -128,12 +130,10 @@
       margin-bottom: 18px;
       letter-spacing: 0.6px;
     }
-
     .hero-copy h1 span {
       color: #ff4b4b;
       text-shadow: 0 0 22px rgba(255, 75, 75, 0.35);
     }
-
     .eyebrow {
       display: inline-block;
       margin-bottom: 14px;
@@ -147,21 +147,18 @@
       text-transform: uppercase;
       letter-spacing: 1px;
     }
-
     .hero-copy p {
       color: rgba(255,255,255,0.82);
       font-size: 1.05rem;
       max-width: 700px;
       margin-bottom: 24px;
     }
-
     .hero-points {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
       margin-bottom: 26px;
     }
-
     .hero-points span {
       padding: 10px 14px;
       border-radius: 999px;
@@ -170,17 +167,12 @@
       font-size: 14px;
       font-weight: 600;
     }
-
     .hero-actions {
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
     }
-
-    .hero-visual {
-      position: relative;
-    }
-
+    .hero-visual { position: relative; }
     .hero-card {
       background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
       border: 1px solid rgba(255,255,255,0.09);
@@ -188,7 +180,6 @@
       padding: 18px;
       box-shadow: 0 24px 60px rgba(0,0,0,0.35);
     }
-
     .hero-main-image {
       border-radius: 22px;
       width: 100%;
@@ -196,7 +187,6 @@
       object-fit: cover;
       border: 2px solid rgba(255,255,255,0.08);
     }
-
     .floating-mini {
       position: absolute;
       right: -10px;
@@ -208,7 +198,6 @@
       padding: 12px;
       box-shadow: 0 12px 30px rgba(0,0,0,0.4);
     }
-
     .floating-mini img {
       border-radius: 12px;
       width: 100%;
@@ -216,29 +205,23 @@
       object-fit: cover;
       margin-bottom: 8px;
     }
-
     .floating-mini strong {
       display: block;
       font-size: 13px;
       margin-bottom: 4px;
     }
-
     .floating-mini p {
       font-size: 12px;
       color: rgba(255,255,255,0.74);
     }
 
-    .section {
-      padding: 42px 0;
-    }
-
+    .section { padding: 42px 0; }
     .section-title {
       font-family: 'Orbitron', sans-serif;
       font-size: clamp(1.6rem, 2.5vw, 2.5rem);
       margin-bottom: 10px;
       text-align: center;
     }
-
     .section-subtitle {
       text-align: center;
       color: rgba(255,255,255,0.74);
@@ -251,7 +234,6 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
-
     .feature-card {
       background: rgba(255,255,255,0.05);
       border: 1px solid rgba(255,255,255,0.08);
@@ -261,25 +243,21 @@
       display: flex;
       flex-direction: column;
     }
-
     .feature-card:hover {
       transform: translateY(-6px);
       border-color: rgba(255,255,255,0.16);
     }
-
     .feature-card img {
       width: 100%;
       height: 140px;
       object-fit: cover;
     }
-
     .feature-body {
       padding: 18px;
       display: flex;
       flex-direction: column;
       height: 100%;
     }
-
     .feature-tag {
       display: inline-block;
       margin-bottom: 10px;
@@ -292,19 +270,16 @@
       background: rgba(255,255,255,0.08);
       color: #ffd7d7;
     }
-
     .feature-card h3 {
       font-size: 1.15rem;
       margin-bottom: 10px;
       line-height: 1.35;
     }
-
     .feature-card p {
       color: rgba(255,255,255,0.72);
       font-size: 0.95rem;
       margin-bottom: 16px;
     }
-
     .feature-list {
       display: grid;
       gap: 8px;
@@ -313,13 +288,11 @@
       margin-bottom: 18px;
       min-height: 78px;
     }
-
     .feature-list div::before {
       content: "• ";
       color: #ff5959;
       font-weight: 900;
     }
-
     .feature-card .btn {
       margin-top: auto;
       width: 100%;
@@ -334,26 +307,22 @@
       text-align: center;
       box-shadow: 0 20px 50px rgba(0,0,0,0.3);
     }
-
     .locker-box h3 {
       font-family: 'Orbitron', sans-serif;
       font-size: clamp(1.4rem, 2vw, 2rem);
       margin-bottom: 12px;
     }
-
     .locker-box p {
       color: rgba(255,255,255,0.78);
       max-width: 720px;
       margin: 0 auto 20px;
     }
-
     .locker-buttons {
       display: flex;
       gap: 12px;
       justify-content: center;
       flex-wrap: wrap;
     }
-
     .locker-note {
       margin-top: 14px;
       font-size: 14px;
@@ -370,7 +339,6 @@
       border-radius: 28px;
       padding: 24px;
     }
-
     .giveaway-box img {
       width: 100%;
       border-radius: 22px;
@@ -378,25 +346,21 @@
       min-height: 300px;
       max-height: 420px;
     }
-
     .giveaway-content h3 {
       font-family: 'Orbitron', sans-serif;
       font-size: clamp(1.5rem, 2.3vw, 2.4rem);
       margin-bottom: 12px;
       color: #ffd54f;
     }
-
     .giveaway-content p {
       color: rgba(255,255,255,0.82);
       margin-bottom: 14px;
     }
-
     .prizes {
       display: grid;
       gap: 12px;
       margin: 20px 0;
     }
-
     .prize {
       background: rgba(255,255,255,0.05);
       border: 1px solid rgba(255,215,0,0.16);
@@ -404,9 +368,7 @@
       padding: 14px 16px;
       font-weight: 700;
     }
-
     .prize span { color: #ffd54f; }
-
     .code-box {
       margin: 18px 0;
       padding: 16px 18px;
@@ -414,7 +376,6 @@
       border: 1px dashed rgba(255,255,255,0.25);
       background: rgba(0,0,0,0.35);
     }
-
     .code-box strong {
       display: block;
       font-size: 1.6rem;
@@ -429,7 +390,6 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 16px;
     }
-
     .gallery img {
       width: 100%;
       height: 240px;
@@ -444,7 +404,6 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 18px;
     }
-
     .step {
       background: rgba(255,255,255,0.05);
       border: 1px solid rgba(255,255,255,0.08);
@@ -452,7 +411,6 @@
       padding: 22px 18px;
       text-align: center;
     }
-
     .step-num {
       width: 54px;
       height: 54px;
@@ -465,12 +423,10 @@
       font-weight: 800;
       box-shadow: 0 10px 24px rgba(255,50,50,0.24);
     }
-
     .step h4 {
       margin-bottom: 8px;
       font-size: 1.05rem;
     }
-
     .step p {
       font-size: 0.95rem;
       color: rgba(255,255,255,0.72);
@@ -480,20 +436,17 @@
       text-align: center;
       padding-bottom: 80px;
     }
-
     .final-cta-card {
       background: linear-gradient(180deg, rgba(255,49,49,0.12), rgba(255,255,255,0.03));
       border: 1px solid rgba(255,255,255,0.08);
       border-radius: 30px;
       padding: 34px 22px;
     }
-
     .final-cta-card h3 {
       font-family: 'Orbitron', sans-serif;
       font-size: clamp(1.5rem, 2.4vw, 2.4rem);
       margin-bottom: 12px;
     }
-
     .final-cta-card p {
       color: rgba(255,255,255,0.76);
       max-width: 700px;
@@ -516,13 +469,11 @@
       .gallery {
         grid-template-columns: 1fr;
       }
-
       .floating-mini {
         position: static;
         width: 100%;
         margin-top: 14px;
       }
-
       .feature-card img,
       .gallery img {
         height: auto;
@@ -534,22 +485,16 @@
         flex-direction: column;
         align-items: stretch;
       }
-
       .top-actions,
       .locker-buttons {
         width: 100%;
       }
-
       .top-actions .btn,
       .hero-actions .btn,
       .locker-buttons .btn {
         width: 100%;
       }
-
-      .hero {
-        padding-top: 40px;
-      }
-
+      .hero { padding-top: 40px; }
       .locker-box,
       .giveaway-box,
       .final-cta-card {
@@ -567,7 +512,7 @@
       </div>
       <div class="top-actions">
         <a class="btn btn-secondary" href="#preview">See Preview</a>
-        <a class="btn btn-primary" href="#unlock">Unlock Free Access</a>
+        <button class="btn btn-primary" type="button" onclick="openLocker('pack')">Unlock Free Access</button>
       </div>
     </div>
   </header>
@@ -579,19 +524,19 @@
           <div class="eyebrow">Free Roblox Bundle</div>
           <h1>Get Your <span>Free Roblox Mega Pack</span></h1>
           <p>
-            Unlock avatar PNGs, bonus mod visuals, <strong>MOD Menu / Unlimited Robux / Wallhack</strong> themed content,
-            and a secret giveaway entry in one place.
+            Unlock avatar PNGs, bonus mod visuals, MOD Menu access, and a secret giveaway entry all in one landing page.
           </p>
 
           <div class="hero-points">
             <span>Avatar PNG Pack</span>
-            <span>MOD Menu / Unlimited Robux / Wallhack</span>
+            <span>MOD Menu / Unlimited Robux</span>
             <span>Secret Giveaway Code</span>
           </div>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#unlock">Unlock Free Access</a>
-            <a class="btn btn-secondary" href="https://instagram.com/dabanjion" target="_blank" rel="noopener noreferrer">Open Instagram</a>
+            <button class="btn btn-pack" type="button" onclick="openLocker('pack')">Open Pack Locker</button>
+            <button class="btn btn-mod" type="button" onclick="openLocker('mod')">Open Mod Locker</button>
+            <button class="btn btn-giveaway" type="button" onclick="openLocker('giveaway')">Open Giveaway Locker</button>
           </div>
         </div>
 
@@ -620,7 +565,7 @@
       <div class="container">
         <h2 class="section-title">Choose Your Path</h2>
         <p class="section-subtitle">
-          Pick the section you want, then unlock it directly with the matching locker.
+          Pick the section you want, then unlock it with the matching content locker.
         </p>
 
         <div class="cards-3">
@@ -632,10 +577,10 @@
               <p>Free Roblox-style character images, stickers, and visual assets ready to use.</p>
               <div class="feature-list">
                 <div>Multiple PNG visuals</div>
-                <div>Character and sticker style assets</div>
-                <div>Easy to preview and download</div>
+                <div>Character and sticker assets</div>
+                <div>Easy preview and access flow</div>
               </div>
-              <a class="btn btn-primary" href="your-deployment-url.com/4741afd........................" target="_blank" rel="noopener noreferrer">Open Pack Locker</a>
+              <button class="btn btn-pack" type="button" onclick="openLocker('pack')">Open Pack Locker</button>
             </div>
           </article>
 
@@ -644,13 +589,13 @@
             <div class="feature-body">
               <span class="feature-tag">Mod</span>
               <h3>MOD Menu / Unlimited Robux / Wallhack</h3>
-              <p>Focused on the mod-style benefits you wanted to highlight clearly in the title.</p>
+              <p>Focused on the mod-style benefits you wanted to highlight clearly on the page.</p>
               <div class="feature-list">
                 <div>MOD Menu themed content</div>
                 <div>Unlimited Robux style visuals</div>
-                <div>Wallhack-related bonus section</div>
+                <div>Bonus hack-style section</div>
               </div>
-              <a class="btn btn-primary" href="your-deployment-url.com/80c84cb........................." target="_blank" rel="noopener noreferrer">Open Mod Locker</a>
+              <button class="btn btn-mod" type="button" onclick="openLocker('mod')">Open Mod Locker</button>
             </div>
           </article>
 
@@ -659,13 +604,13 @@
             <div class="feature-body">
               <span class="feature-tag">Giveaway</span>
               <h3>Secret Giveaway Entry</h3>
-              <p>Complete the unlock step, get your secret code, and send it directly on Instagram.</p>
+              <p>Complete the unlock step, receive your code, and send it directly on Instagram.</p>
               <div class="feature-list">
-                <div>Win Roblox gift card rewards</div>
+                <div>Gift card style reward path</div>
                 <div>Simple code-based entry flow</div>
-                <div>Direct Instagram contact</div>
+                <div>Direct Instagram handoff</div>
               </div>
-              <a class="btn btn-primary" href="your-deployment-url.com/20d8187." target="_blank" rel="noopener noreferrer">Open Giveaway Locker</a>
+              <button class="btn btn-giveaway" type="button" onclick="openLocker('giveaway')">Open Giveaway Locker</button>
             </div>
           </article>
         </div>
@@ -677,17 +622,17 @@
         <div class="locker-box">
           <h3>Open The Right Locker</h3>
           <p>
-            Use the correct button below depending on what the visitor wants to unlock: the Avatar PNG Pack,
+            Use the matching button below depending on what the visitor wants to unlock: the Avatar PNG Pack,
             the MOD section, or the Secret Giveaway entry.
           </p>
 
           <div class="locker-buttons">
-            <a class="btn btn-primary" href="your-deployment-url.com/4741afd........................" target="_blank" rel="noopener noreferrer">Pack Locker</a>
-            <a class="btn btn-primary" href="your-deployment-url.com/80c84cb........................." target="_blank" rel="noopener noreferrer">Mod Locker</a>
-            <a class="btn btn-primary" href="your-deployment-url.com/20d8187." target="_blank" rel="noopener noreferrer">Giveaway Locker</a>
+            <button class="btn btn-pack" type="button" onclick="openLocker('pack')">Pack Locker</button>
+            <button class="btn btn-mod" type="button" onclick="openLocker('mod')">Mod Locker</button>
+            <button class="btn btn-giveaway" type="button" onclick="openLocker('giveaway')">Giveaway Locker</button>
           </div>
 
-          <div class="locker-note">استبدل هذه الروابط المختصرة التي فيها نقاط بالرابط الكامل الحقيقي قبل النشر.</div>
+          <div class="locker-note">The correct locker script loads when the user clicks the matching button.</div>
         </div>
       </div>
     </section>
@@ -719,7 +664,7 @@
             </div>
 
             <div class="hero-actions">
-              <a class="btn btn-primary" href="your-deployment-url.com/20d8187." target="_blank" rel="noopener noreferrer">Open Giveaway Locker</a>
+              <button class="btn btn-giveaway" type="button" onclick="openLocker('giveaway')">Open Giveaway Locker</button>
               <a class="btn btn-secondary" href="https://instagram.com/dabanjion" target="_blank" rel="noopener noreferrer">Send Code on Instagram</a>
             </div>
           </div>
@@ -731,7 +676,7 @@
       <div class="container">
         <h2 class="section-title">Preview The Pack</h2>
         <p class="section-subtitle">
-          These are some of the Roblox-style visuals included in your offer preview.
+          These are some of the Roblox-style visuals included in your preview section.
         </p>
 
         <div class="gallery">
@@ -749,26 +694,26 @@
       <div class="container">
         <h2 class="section-title">How It Works</h2>
         <p class="section-subtitle">
-          Keep it simple: choose the section, open its locker, complete the step, then get access.
+          Choose the section, click the matching button, complete the step, then unlock the content.
         </p>
 
         <div class="steps">
           <div class="step">
             <div class="step-num">1</div>
             <h4>Choose Your Path</h4>
-            <p>Select Pack, Mod, or Giveaway based on what you want.</p>
+            <p>Select Pack, Mod, or Giveaway depending on what you want.</p>
           </div>
 
           <div class="step">
             <div class="step-num">2</div>
             <h4>Open The Locker</h4>
-            <p>Click the matching locker button for that section.</p>
+            <p>Click the matching button for the correct section.</p>
           </div>
 
           <div class="step">
             <div class="step-num">3</div>
             <h4>Complete One Step</h4>
-            <p>Finish the required locker action one time.</p>
+            <p>Finish the required content locker action.</p>
           </div>
 
           <div class="step">
@@ -785,12 +730,13 @@
         <div class="final-cta-card">
           <h3>Unlock Everything In One Place</h3>
           <p>
-            Get the Avatar PNG Pack, the MOD Menu / Unlimited Robux / Wallhack section,
-            and the Secret Giveaway path from one Roblox-style landing page.
+            Get the Avatar PNG Pack, the MOD Menu section, and the Secret Giveaway path
+            from one Roblox-style landing page.
           </p>
           <div class="hero-actions" style="justify-content:center;">
-            <a class="btn btn-primary" href="your-deployment-url.com/4741afd........................" target="_blank" rel="noopener noreferrer">Start With Pack</a>
-            <a class="btn btn-secondary" href="https://instagram.com/dabanjion" target="_blank" rel="noopener noreferrer">Instagram Direct</a>
+            <button class="btn btn-pack" type="button" onclick="openLocker('pack')">Start With Pack</button>
+            <button class="btn btn-mod" type="button" onclick="openLocker('mod')">Open Mod</button>
+            <button class="btn btn-giveaway" type="button" onclick="openLocker('giveaway')">Open Giveaway</button>
           </div>
         </div>
       </div>
@@ -802,5 +748,32 @@
       © 2026 Roblox Mega Pack • Digital Access Page
     </div>
   </footer>
+
+  <script>
+    const lockerConfigs = {
+      pack: { it: 4617585, key: "d0e59" },
+      mod: { it: 4617210, key: "aa97a" },
+      giveaway: { it: 4617259, key: "395c4" }
+    };
+
+    function loadLockerScript() {
+      const existing = document.getElementById("adblue-locker-script");
+      if (existing) existing.remove();
+
+      const script = document.createElement("script");
+      script.id = "adblue-locker-script";
+      script.src = "https://d1g1lhd4vferpn.cloudfront.net/d24639e.js";
+      script.async = true;
+      document.body.appendChild(script);
+    }
+
+    function openLocker(type) {
+      const cfg = lockerConfigs[type];
+      if (!cfg) return;
+
+      window.HuUzg_aFg_BzEEWc = { it: cfg.it, key: cfg.key };
+      loadLockerScript();
+    }
+  </script>
 </body>
 </html>
