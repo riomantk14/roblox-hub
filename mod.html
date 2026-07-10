@@ -5,31 +5,111 @@
   <title>Roblox MOD Menu Locker</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Locker code (MOD) -->
   <script type="text/javascript">
-    var UdAgO_IXe_TNOHsc={"it":4617582,"key":"43db4"};
+    var UdAgO_IXe_TNOHsc = {"it":4617582,"key":"43db4"};
   </script>
   <script src="https://d1g1lhd4vferpn.cloudfront.net/0b1d25b.js"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron:700|Source+Sans+Pro">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0f0f23;
+      font-family: "Source Sans Pro", sans-serif;
+      color: #ffffff;
+      text-align: center;
+    }
+    .mod-wrapper {
+      max-width: 520px;
+      margin: 40px auto;
+      padding: 0 18px 24px;
+      border-radius: 16px;
+      border: 2px solid #00ff88;
+      box-shadow: 0 18px 40px rgba(0,255,136,0.28);
+      background: #0b1610;
+    }
+    .mod-header-img {
+      width: 100%;
+      max-width: 260px;
+      height: 160px;
+      margin: 22px auto 12px;
+      border-radius: 18px;
+      border: 2px solid #00ff88;
+      object-fit: cover;
+      box-shadow: 0 0 18px rgba(0,255,136,0.45);
+    }
+    h1 {
+      font-family: Orbitron, sans-serif;
+      font-size: 1.6rem;
+      margin: 6px 0 8px;
+    }
+    h1 span { color: #00ff88; }
+    p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+      margin: 4px 0;
+    }
+    .mod-points {
+      display: grid;
+      gap: 6px;
+      margin: 12px 0 16px;
+      font-size: 0.9rem;
+    }
+    .mod-points div::before {
+      content: "• ";
+      color: #00ff88;
+      font-weight: 900;
+    }
+    .mod-button {
+      padding: 14px 32px;
+      border-radius: 999px;
+      border: none;
+      background: linear-gradient(45deg,#00cc66,#00ff88);
+      color: #041a10;
+      font-weight: 800;
+      font-size: 0.98rem;
+      cursor: pointer;
+      margin-top: 10px;
+      box-shadow: 0 10px 26px rgba(0,255,136,0.45);
+      transition: 0.25s ease;
+    }
+    .mod-button:hover {
+      transform: translateY(-2px);
+    }
+  </style>
 </head>
 
-<body style="background:#0f0f23; color:#fff; text-align:center; font-family:Arial,sans-serif;">
+<body>
 
-  <h1 style="margin-top:40px;">Roblox MOD Menu Access</h1>
-  <p style="margin:10px 0 20px;">
-    Click the button below to open the MOD locker and continue.
+<div class="mod-wrapper">
+  <img
+    class="mod-header-img"
+    src="https://i.ibb.co/Fq5Xs94F/imgi-4-Roblox-MOD-APK4.png"
+    alt="Roblox MOD menu themed preview"
+  />
+
+  <h1>Roblox <span>MOD Menu</span> Section</h1>
+  <p>
+    This path opens a MOD-style content locker themed around unlimited Robux, boosted progression,
+    and exclusive-looking tools.
   </p>
 
-  <button onclick="_iD()" style="
-    padding:14px 32px;
-    border-radius:999px;
-    border:none;
-    background:linear-gradient(45deg,#00cc66,#00ff88);
-    color:#041a10;
-    font-weight:bold;
-    font-size:15px;
-    cursor:pointer;
-  ">
+  <div class="mod-points">
+    <div>MOD menu style visuals</div>
+    <div>Unlimited Robux themed graphics</div>
+    <div>Separate locker flow for MOD section</div>
+  </div>
+
+  <p style="font-size:0.9rem; opacity:0.8;">
+    Click the button below to open the MOD locker and continue through the AdBlueMedia flow.
+  </p>
+
+  <button class="mod-button" onclick="_iD()">
     UNLOCK MOD SECTION
   </button>
+</div>
 
 </body>
 </html>
