@@ -2,34 +2,167 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Free Roblox PNG Pack Locker</title>
+  <title>Free Roblox Avatar PNG Pack Locker</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Locker code (PNG Pack) -->
   <script type="text/javascript">
-    var zErGT_ALA_tlvzcc={"it":4617025,"key":"5b3c8"};
+    var zErGT_ALA_tlvzcc = {"it":4617025,"key":"5b3c8"};
   </script>
   <script src="https://d1g1lhd4vferpn.cloudfront.net/30a19cf.js"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron:700|Source+Sans+Pro">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0f0f23;
+      font-family: "Source Sans Pro", sans-serif;
+      color: #ffffff;
+      text-align: center;
+    }
+    .my-locker {
+      border: 10px solid #00ffff;
+      box-shadow: 0px 1px 30px rgba(0, 255, 255, 0.5) !important;
+      position: relative;
+      background: #0f0f23;
+      border-radius: 12px;
+      max-width: 480px;
+      margin: 40px auto;
+      padding: 0 18px 18px;
+    }
+    .my-locker-top span {
+      font-size: 21px !important;
+      color: #ffffff;
+      font-family: Orbitron, sans-serif;
+      display: block;
+      margin-top: 10px;
+    }
+    .my-locker-top img {
+      height: 115px;
+      margin-bottom: 7px;
+      border-radius: 10px;
+      border: 2px solid #00ffff;
+      box-shadow: 0 0 15px rgba(0,255,255,0.4);
+      max-width: 100%;
+    }
+    .my-locker-top hr {
+      background: #00ffff;
+      border: 0;
+      height: 2px;
+      margin: 17px 0 0;
+      opacity: 0.4;
+    }
+
+    .my-locker-body-text-top p {
+      color: #ffffff !important;
+      font-size: 14px !important;
+      line-height: 1.6 !important;
+      margin: 10px 0;
+    }
+    .my-locker-body-text-top p strong {
+      color: #00ffff !important;
+    }
+
+    .loading-button {
+      background: linear-gradient(45deg, #ff00ff, #00ffff);
+      color: #ffffff;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 900;
+      padding: 14px 0;
+      border-radius: 8px;
+      margin-top: 12px;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
+    .loading-button:hover {
+      box-shadow: 0 5px 20px rgba(255,0,255,0.5);
+      transform: translateY(-2px);
+    }
+
+    .my-locker-body-offers-list a {
+      display: block;
+      margin-top: 10px;
+      padding: 10px 0;
+      border-bottom-width: 3px !important;
+      background: rgba(255,255,255,0.05) !important;
+      border-color: rgba(0,255,255,0.2) !important;
+      transition: background 0.2s;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .my-locker-body-offers-list a:hover {
+      background: rgba(0,255,255,0.1) !important;
+    }
+  </style>
+
+  <script>
+    var headerImage = "https://avatarprints.vercel.app/images/1.png";
+    document.addEventListener("DOMContentLoaded", function () {
+      var top = document.querySelector(".my-locker-top");
+      if (top) {
+        top.innerHTML = ''
+          + '<img src="' + headerImage + '" alt="Roblox Avatar PNG Pack">'
+          + '<span style="color:#00ffff; font-family:Orbitron,sans-serif;">Free Roblox Avatar PNG Pack</span>'
+          + '<hr>';
+      }
+
+      var bodyTop = document.querySelector(".my-locker-body-text-top");
+      if (bodyTop) {
+        bodyTop.innerHTML =
+          '<p style="color:#ffffff;font-size:14px;line-height:1.6;">'
+          + 'Complete <strong style="color:#00ffff;">one quick step</strong> below to unlock your '
+          + '<strong style="color:#00ffff;">FREE Roblox Avatar PNG Pack</strong> instantly!'
+          + '</p>';
+      }
+
+      var bodyBottom = document.querySelector(".my-locker-body-text-bottom");
+      if (bodyBottom) {
+        bodyBottom.innerHTML =
+          '<div class="loading-button" onclick="_qd()">'
+          + '<i class="fa fa-lock" style="color:#ffe100;margin-right:8px;"></i>'
+          + 'UNLOCK YOUR FREE PNG PACK'
+          + '</div>';
+      }
+    });
+  </script>
 </head>
 
-<body style="background:#0f0f23; color:#fff; text-align:center; font-family:Arial,sans-serif;">
+<body>
 
-  <h1 style="margin-top:40px;">Free Roblox Avatar PNG Pack</h1>
-  <p style="margin:10px 0 20px;">
-    Click the button below to open the locker and unlock your free pack.
-  </p>
+<div class="my-locker">
+  <div class="my-locker-top">
+    <span>Free Roblox Avatar PNG Pack</span>
+  </div>
 
+  <div class="my-locker-body-text-top">
+    <p>Loading locker settings...</p>
+  </div>
+
+  <div class="my-locker-body-text-bottom">
+    <div class="loading-button" onclick="_qd()">OPEN LOCKER</div>
+  </div>
+
+  <div class="my-locker-body-offers-list">
+    <!-- AdBlueMedia injects offers here -->
+  </div>
+</div>
+
+<p style="margin-top:20px;">
   <button onclick="_qd()" style="
-    padding:14px 32px;
+    padding:10px 24px;
     border-radius:999px;
     border:none;
     background:linear-gradient(45deg,#ff00ff,#00ffff);
     color:#fff;
     font-weight:bold;
-    font-size:15px;
+    font-size:14px;
     cursor:pointer;
   ">
-    UNLOCK YOUR FREE PNG PACK
+    Open Locker Again
   </button>
+</p>
 
 </body>
 </html>
