@@ -4,15 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Roblox Mega Pack</title>
-  <meta name="description" content="Unlock your free Roblox Mega Pack with one click." />
+  <meta name="description" content="Choose between Roblox PNG Pack, MOD section, or Giveaway locker." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <script type="text/javascript">
-    var zErGT_ALA_tlvzcc = {"it":4617025,"key":"5b3c8"};
-  </script>
-  <script src="https://d1g1lhd4vferpn.cloudfront.net/30a19cf.js"></script>
 
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -92,11 +87,6 @@
       color: #fff;
       box-shadow: 0 12px 28px rgba(255,49,49,0.25);
     }
-    .btn-secondary {
-      background: rgba(255,255,255,0.06);
-      border-color: rgba(255,255,255,0.1);
-      color: #fff;
-    }
     .btn-pack {
       background: linear-gradient(135deg, #00c8ff, #0078ff);
       color: #fff;
@@ -108,6 +98,11 @@
     .btn-giveaway {
       background: linear-gradient(135deg, #ff9900, #ffd700);
       color: #1a1200;
+    }
+    .btn-secondary {
+      background: rgba(255,255,255,0.06);
+      border-color: rgba(255,255,255,0.1);
+      color: #fff;
     }
 
     .hero { padding: 56px 0 28px; }
@@ -330,7 +325,6 @@
         grid-template-columns: 1fr;
       }
     }
-
     @media (max-width: 640px) {
       .topbar-inner {
         flex-direction: column;
@@ -352,7 +346,7 @@
         <div class="logo-badge"></div>
         <div>Roblox Mega Pack</div>
       </div>
-      <button class="btn btn-primary" onclick="_qd()">Unlock Free Access</button>
+      <button class="btn btn-primary" onclick="location.href='pack.html'">Start With PNG Pack</button>
     </div>
   </header>
 
@@ -361,20 +355,21 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <div class="eyebrow">Free Roblox Bundle</div>
-          <h1>Get Your <span>Free Roblox Mega Pack</span></h1>
+          <h1>Choose Your <span>Roblox Mega Pack Path</span></h1>
           <p>
-            Unlock the free Roblox Mega Pack using the main locker button below.
+            Each option opens its own AdBlueMedia locker page: PNG Pack, MOD Menu, or Giveaway.
           </p>
 
           <div class="hero-points">
-            <span>PNG Pack</span>
-            <span>MOD Section</span>
-            <span>Giveaway Entry</span>
+            <span>Avatar PNG Pack</span>
+            <span>MOD Menu Section</span>
+            <span>Secret Giveaway Code</span>
           </div>
 
           <div class="hero-actions">
-            <button class="btn btn-primary" onclick="_qd()">Unlock Free Now</button>
-            <a class="btn btn-secondary" href="#preview">See Preview</a>
+            <button class="btn btn-pack" onclick="location.href='pack.html'">Open PNG Pack Locker</button>
+            <button class="btn btn-mod" onclick="location.href='mod.html'">Open MOD Locker</button>
+            <button class="btn btn-giveaway" onclick="location.href='giveaway.html'">Open Giveaway Locker</button>
           </div>
         </div>
 
@@ -388,119 +383,28 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">What’s Included</h2>
-        <p class="section-subtitle">
-          The page highlights the same three content directions you defined before: pack, mod, and giveaway.
-        </p>
-
-        <div class="cards-3">
-          <article class="feature-card">
-            <img src="https://i.ibb.co/PGnVPqRD/Roblox-183.png" alt="Roblox avatar PNG pack preview" />
-            <div class="feature-body">
-              <span class="feature-tag">Pack</span>
-              <h3>Avatar PNG Pack</h3>
-              <p>Free Roblox-style character images, stickers, and visual assets.</p>
-              <div class="feature-list">
-                <div>PNG character visuals</div>
-                <div>Sticker-style assets</div>
-                <div>Quick unlock path</div>
-              </div>
-              <button class="btn btn-pack" onclick="_qd()">Unlock Pack</button>
-            </div>
-          </article>
-
-          <article class="feature-card">
-            <img src="https://i.ibb.co/ymshn3Sq/imgi-7-roblox-mod-apk-3.png" alt="Roblox MOD menu preview" />
-            <div class="feature-body">
-              <span class="feature-tag">Mod</span>
-              <h3>MOD Menu Access</h3>
-              <p>Extra mod-style content presented inside the same landing page flow.</p>
-              <div class="feature-list">
-                <div>MOD-themed visuals</div>
-                <div>Unlimited Robux theme</div>
-                <div>Main locker access</div>
-              </div>
-              <button class="btn btn-mod" onclick="_qd()">Unlock Mod</button>
-            </div>
-          </article>
-
-          <article class="feature-card">
-            <img src="https://i.ibb.co/KR4tJvq/GIVEAWAY-LOCKER.png" alt="Roblox giveaway banner" />
-            <div class="feature-body">
-              <span class="feature-tag">Giveaway</span>
-              <h3>Secret Giveaway Entry</h3>
-              <p>Use the same main unlock flow, then continue into the giveaway process.</p>
-              <div class="feature-list">
-                <div>Gift card reward path</div>
-                <div>Code-style continuation</div>
-                <div>Instagram handoff</div>
-              </div>
-              <button class="btn btn-giveaway" onclick="_qd()">Unlock Giveaway</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <section class="section" id="preview">
       <div class="container">
         <h2 class="section-title">Preview The Pack</h2>
-        <p class="section-subtitle">
-          Some Roblox-style visuals shown in compact preview blocks.
-        </p>
+      <p class="section-subtitle">
+        Some Roblox-style visuals shown in compact preview blocks.
+      </p>
 
-        <div class="gallery">
-          <img src="https://i.ibb.co/PGnVPqRD/Roblox-183.png" alt="Roblox pack image 1" />
-          <img src="https://i.ibb.co/4wN7Q2X2/Roblox-61.png" alt="Roblox pack image 2" />
-          <img src="https://i.ibb.co/CKyj6Cqg/Roblox-46.png" alt="Roblox pack image 3" />
-          <img src="https://i.ibb.co/m5wrHJ0g/Roblox-53.png" alt="Roblox pack image 4" />
-          <img src="https://i.ibb.co/dw5M3zHC/Roblox-12.png" alt="Roblox pack image 5" />
-          <img src="https://i.ibb.co/Fq5Xs94F/imgi-4-Roblox-MOD-APK4.png" alt="Roblox mod image preview" />
-        </div>
+      <div class="gallery">
+        <img src="https://i.ibb.co/PGnVPqRD/Roblox-183.png" alt="Roblox pack image 1" />
+        <img src="https://i.ibb.co/4wN7Q2X2/Roblox-61.png" alt="Roblox pack image 2" />
+        <img src="https://i.ibb.co/CKyj6Cqg/Roblox-46.png" alt="Roblox pack image 3" />
+        <img src="https://i.ibb.co/m5wrHJ0g/Roblox-53.png" alt="Roblox pack image 4" />
+        <img src="https://i.ibb.co/dw5M3zHC/Roblox-12.png" alt="Roblox pack image 5" />
+        <img src="https://i.ibb.co/Fq5Xs94F/imgi-4-Roblox-MOD-APK4.png" alt="Roblox mod image preview" />
       </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">How It Works</h2>
-        <p class="section-subtitle">
-          Click any unlock button and the AdBlueMedia locker opens through the `_qd()` function.
-        </p>
-
-        <div class="steps">
-          <div class="step">
-            <div class="step-num">1</div>
-            <h4>Click</h4>
-            <p>Press any unlock button on the page.</p>
-          </div>
-
-          <div class="step">
-            <div class="step-num">2</div>
-            <h4>Open</h4>
-            <p>The locker launches through `_qd()`.</p>
-          </div>
-
-          <div class="step">
-            <div class="step-num">3</div>
-            <h4>Complete</h4>
-            <p>Finish the required step in the locker.</p>
-          </div>
-
-          <div class="step">
-            <div class="step-num">4</div>
-            <h4>Unlock</h4>
-            <p>Continue to the content flow after access is granted.</p>
-          </div>
-        </div>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      © 2026 Roblox Mega Pack • Main Locker Page
+      © 2026 Roblox Mega Pack • Landing Page
     </div>
   </footer>
 </body>
