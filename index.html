@@ -173,9 +173,9 @@
     .hero-main-image {
       border-radius: 22px;
       width: 100%;
-      max-width: 260px;
+      max-width: 220px;
+      height: 220px;
       margin: 0 auto;
-      aspect-ratio: 1 / 1;
       object-fit: cover;
       border: 2px solid rgba(255,255,255,0.08);
     }
@@ -214,8 +214,9 @@
     }
     .feature-card img {
       width: 100%;
-      height: 96px;
+      height: 80px;
       object-fit: cover;
+      border-radius: 12px;
     }
     .feature-body {
       padding: 16px;
@@ -269,9 +270,9 @@
     }
     .gallery img {
       width: 100%;
-      height: 140px;
+      height: 110px;
       object-fit: cover;
-      border-radius: 16px;
+      border-radius: 12px;
       border: 1px solid rgba(255,255,255,0.08);
       background: rgba(255,255,255,0.04);
     }
@@ -331,6 +332,16 @@
         align-items: stretch;
       }
       .hero { padding-top: 40px; }
+      .hero-main-image {
+        max-width: 180px;
+        height: 180px;
+      }
+      .feature-card img {
+        height: 70px;
+      }
+      .gallery img {
+        height: 90px;
+      }
       .hero-actions .btn,
       .feature-card .btn {
         width: 100%;
@@ -357,13 +368,14 @@
           <div class="eyebrow">Free Roblox Bundle</div>
           <h1>Choose Your <span>Roblox Mega Pack Path</span></h1>
           <p>
-            Each option opens its own AdBlueMedia locker page: PNG Pack, MOD Menu, or Giveaway.
+            Pick how you want to use the Mega Pack: unlock a free avatar PNG pack, explore a MOD-style
+            section themed around unlimited Robux, or enter a secret Roblox giveaway with real gift card prizes.
           </p>
 
           <div class="hero-points">
-            <span>Avatar PNG Pack</span>
-            <span>MOD Menu Section</span>
-            <span>Secret Giveaway Code</span>
+            <span>Free Avatar PNG Pack</span>
+            <span>MOD Menu style experience</span>
+            <span>Secret Roblox Giveaway entry</span>
           </div>
 
           <div class="hero-actions">
@@ -383,21 +395,122 @@
       </div>
     </section>
 
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Pick Your Path</h2>
+        <p class="section-subtitle">
+          Choose between three clear paths: a free Roblox PNG pack, a MOD menu themed section, or a secret
+          giveaway that uses a code you send to @dabanjion on Instagram.
+        </p>
+
+        <div class="cards-3">
+          <!-- PNG Pack Card -->
+          <article class="feature-card">
+            <img src="https://i.ibb.co/PGnVPqRD/Roblox-183.png" alt="Roblox avatar PNG pack preview" />
+            <div class="feature-body">
+              <span class="feature-tag">Pack</span>
+              <h3>Avatar PNG Pack</h3>
+              <p>
+                Unlock a free Roblox-style avatar PNG pack with characters and sticker-style assets for your designs.
+              </p>
+              <div class="feature-list">
+                <div>PNG character visuals</div>
+                <div>Sticker-style assets</div>
+                <div>Quick unlock via content locker</div>
+              </div>
+              <button class="btn btn-pack" onclick="location.href='pack.html'">Go To PNG Pack Locker</button>
+            </div>
+          </article>
+
+          <!-- MOD Card -->
+          <article class="feature-card">
+            <img src="https://i.ibb.co/ymshn3Sq/imgi-7-roblox-mod-apk-3.png" alt="Roblox MOD menu preview" />
+            <div class="feature-body">
+              <span class="feature-tag">Mod</span>
+              <h3>Roblox MOD Menu Section</h3>
+              <p>
+                Dedicated MOD-style experience with visuals themed around unlimited Robux, faster progression,
+                and exclusive-looking tools.
+              </p>
+              <div class="feature-list">
+                <div>MOD menu style landing page</div>
+                <div>Unlimited Robux themed graphics</div>
+                <div>Separate locker flow for MOD section</div>
+              </div>
+              <button class="btn btn-mod" onclick="location.href='mod.html'">Open MOD Locker</button>
+            </div>
+          </article>
+
+          <!-- Giveaway Card -->
+          <article class="feature-card">
+            <img src="https://i.ibb.co/KR4tJvq/GIVEAWAY-LOCKER.png" alt="Roblox giveaway banner" />
+            <div class="feature-body">
+              <span class="feature-tag">Giveaway</span>
+              <h3>Roblox Secret Giveaway</h3>
+              <p>
+                A dedicated giveaway locker that rewards you with a secret code to enter a Roblox gift card draw
+                via Instagram.
+              </p>
+              <div class="feature-list">
+                <div>Secret code after completing the locker</div>
+                <div>Instagram-based entry via @dabanjion</div>
+                <div>Prizes up to $20 Roblox gift cards</div>
+              </div>
+              <button class="btn btn-giveaway" onclick="location.href='giveaway.html'">Open Giveaway Locker</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="preview">
       <div class="container">
         <h2 class="section-title">Preview The Pack</h2>
-      <p class="section-subtitle">
-        Some Roblox-style visuals shown in compact preview blocks.
-      </p>
+        <p class="section-subtitle">
+          Small preview thumbnails of some Roblox-style visuals included in your PNG pack and MOD section.
+        </p>
 
-      <div class="gallery">
-        <img src="https://i.ibb.co/PGnVPqRD/Roblox-183.png" alt="Roblox pack image 1" />
-        <img src="https://i.ibb.co/4wN7Q2X2/Roblox-61.png" alt="Roblox pack image 2" />
-        <img src="https://i.ibb.co/CKyj6Cqg/Roblox-46.png" alt="Roblox pack image 3" />
-        <img src="https://i.ibb.co/m5wrHJ0g/Roblox-53.png" alt="Roblox pack image 4" />
-        <img src="https://i.ibb.co/dw5M3zHC/Roblox-12.png" alt="Roblox pack image 5" />
-        <img src="https://i.ibb.co/Fq5Xs94F/imgi-4-Roblox-MOD-APK4.png" alt="Roblox mod image preview" />
+        <div class="gallery">
+          <img src="https://i.ibb.co/PGnVPqRD/Roblox-183.png" alt="Roblox pack image 1" />
+          <img src="https://i.ibb.co/4wN7Q2X2/Roblox-61.png" alt="Roblox pack image 2" />
+          <img src="https://i.ibb.co/CKyj6Cqg/Roblox-46.png" alt="Roblox pack image 3" />
+          <img src="https://i.ibb.co/m5wrHJ0g/Roblox-53.png" alt="Roblox pack image 4" />
+          <img src="https://i.ibb.co/dw5M3zHC/Roblox-12.png" alt="Roblox pack image 5" />
+          <img src="https://i.ibb.co/Fq5Xs94F/imgi-4-Roblox-MOD-APK4.png" alt="Roblox mod image preview" />
+        </div>
       </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">
+          Each path has its own locker page, where you pasted the AdBlueMedia code and call the right function
+          to open it.
+        </p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <h4>Choose</h4>
+            <p>Select Pack, Mod, or Giveaway.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <h4>Go To Locker</h4>
+            <p>Landing page sends you to PNG, MOD, or Giveaway locker.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <h4>Complete</h4>
+            <p>Finish the content locker step on that path.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <h4>Unlock</h4>
+            <p>Get your PNG pack, MOD section access, or secret giveaway code.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
